@@ -77,17 +77,6 @@ header button:hover {
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 
-footer {
-    background-color: rgb(255, 83, 83);
-    padding: 20px;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -138,6 +127,17 @@ footer {
 
 .grid .form .submit button:hover {
     background-color: rgba(243, 119, 119, 0.8);
+}
+
+footer {
+    background-color: rgb(255, 83, 83);
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer .references {
