@@ -40,7 +40,7 @@ header {
     color: rgb(243, 119, 119);
 }
 
-button {
+header button {
     padding: 9px 25px;
     background-color: rgb(255, 83, 83);
     border: none;
@@ -49,7 +49,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+header button:hover {
     background-color: rgba(243, 119, 119, 0.8);
 }
 
@@ -77,33 +77,6 @@ button:hover {
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 
-main {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title {
-    padding: 20px;
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.title h1 {
-    font-size: 70px;
-    font-weight: 700;
-}
-
-.title h4 {
-    padding-top: 20px;
-}
-
 footer {
     background-color: rgb(255, 83, 83);
     padding: 20px;
@@ -113,6 +86,58 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid .membership-text {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.grid .form {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.grid .form .row {
+    padding: 4px;
+}
+
+.grid .form .row input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.grid .form .submit {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid .form .submit button {
+    padding: 16px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(255, 83, 83);
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.grid .form .submit button:hover {
+    background-color: rgba(243, 119, 119, 0.8);
 }
 
 footer .references {
