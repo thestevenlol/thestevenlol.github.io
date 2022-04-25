@@ -78,59 +78,16 @@ button:hover {
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-}
-
-.grid .grid-section {
-    position: relative;
-}
-
-.grid .grid-section .img__text {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 500;
-    font-size: 40px;
-    padding: 20px;
-    filter: opacity(0);
-    transition: all 0.3s ease 0s;
+main {
     text-align: center;
-    cursor: pointer;
 }
-
-
-.grid .grid-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.grid .grid-section:hover img {
-    filter: brightness(20%);
-}
-
-.grid .grid-section:hover .img__text {
-    filter: opacity(100%)
-}
-
-
-
 
 footer {
     background-color: rgb(255, 83, 83);
     padding: 20px;
     bottom: 0;
     width: 100%;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
